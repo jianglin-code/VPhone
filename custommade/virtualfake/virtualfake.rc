@@ -1,0 +1,11 @@
+service camera-flash.cells /system/bin/android.hardware.camera.flash@2.1-service
+    class main
+    user system
+    group system
+    seclabel  u:r:init:s0
+
+service telephony.cells /system/bin/android.hardware.telephony@4.2-service
+    class main
+    user system
+    group system
+    seclabel  u:r:init:s0

@@ -1,0 +1,2 @@
+import /init.rk30board.rc
+import /vendor/etc/init/hw/init.rk30board.rc

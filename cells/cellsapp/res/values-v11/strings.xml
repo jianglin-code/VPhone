@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">systemgr</string>
+    <string name="action_settings">Settings</string>
+    <string name="cell1">VPhone 1</string>
+    <string name="cell2">VPhone 2</string>
+    <string name="cell3">VPhone 3</string>
+    <string name="cell4">VPhone 4</string>
+    <string name="cell5">VPhone 5</string>
+    <string name="cell6">VPhone 6</string>
+    <string name="cell7">VPhone 7</string>
+    <string name="cell8">VPhone 8</string>
+    <string name="cell9">VPhone 9</string>
+    <string name="cell10">VPhone 10</string>
+    <string name="cell">VPhone</string>
+    <string name="title">VPhone ManagementCenter</string>
+    <string name="btns1">Reset</string>
+    <string name="btns2">Backup</string>
+    <string name="btns3">Restore</string>
+    <string name="alert">Alert</string>
+    <string name="alertmsg">After confirmation, the virtual device will reset.</string>
+    <string name="alertconfirm">Confirm</string>
+    <string name="alertcancel">Cancel</string>
+
+</resources>

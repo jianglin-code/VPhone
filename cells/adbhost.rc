@@ -1,0 +1,140 @@
+on post-fs-data
+    # adb proxy need
+    mkdir /data/vendor/var 0755 root root
+    mkdir /data/vendor/var/run 0755 root root
+    mkdir /data/vendor/var/run/netns 0755 root root
+
+    # user version need
+    setprop persist.sys.usb.config adb
+
+on load_persist_props_action
+    setprop persist.sys.cell1.init "0"
+    setprop persist.sys.cell1.pid "0"
+    setprop persist.sys.cell1.tar "0"
+    setprop persist.sys.cell1.untar "0"
+    setprop persist.sys.cell1.download "0"
+    setprop persist.sys.cell1.upload "0"
+    setprop persist.sys.cell2.init "0"
+    setprop persist.sys.cell2.pid "0"
+    setprop persist.sys.cell2.tar "0"
+    setprop persist.sys.cell2.untar "0"
+    setprop persist.sys.cell2.download "0"
+    setprop persist.sys.cell2.upload "0"
+    setprop persist.sys.cell3.init "0"
+    setprop persist.sys.cell3.pid "0"
+    setprop persist.sys.cell3.tar "0"
+    setprop persist.sys.cell3.untar "0"
+    setprop persist.sys.cell3.download "0"
+    setprop persist.sys.cell3.upload "0"
+    setprop persist.sys.cell4.init "0"
+    setprop persist.sys.cell4.pid "0"
+    setprop persist.sys.cell4.tar "0"
+    setprop persist.sys.cell4.untar "0"
+    setprop persist.sys.cell4.download "0"
+    setprop persist.sys.cell4.upload "0"
+    setprop persist.sys.cell5.init "0"
+    setprop persist.sys.cell5.pid "0"
+    setprop persist.sys.cell5.tar "0"
+    setprop persist.sys.cell5.untar "0"
+    setprop persist.sys.cell5.download "0"
+    setprop persist.sys.cell5.upload "0"
+    setprop persist.sys.cell6.init "0"
+    setprop persist.sys.cell6.pid "0"
+    setprop persist.sys.cell6.tar "0"
+    setprop persist.sys.cell6.untar "0"
+    setprop persist.sys.cell6.download "0"
+    setprop persist.sys.cell6.upload "0"
+    setprop persist.sys.cell7.init "0"
+    setprop persist.sys.cell7.pid "0"
+    setprop persist.sys.cell7.tar "0"
+    setprop persist.sys.cell7.untar "0"
+    setprop persist.sys.cell7.download "0"
+    setprop persist.sys.cell7.upload "0"
+    setprop persist.sys.cell8.init "0"
+    setprop persist.sys.cell8.pid "0"
+    setprop persist.sys.cell8.tar "0"
+    setprop persist.sys.cell8.untar "0"
+    setprop persist.sys.cell8.download "0"
+    setprop persist.sys.cell8.upload "0"
+    setprop persist.sys.cell9.init "0"
+    setprop persist.sys.cell9.pid "0"
+    setprop persist.sys.cell9.tar "0"
+    setprop persist.sys.cell9.untar "0"
+    setprop persist.sys.cell9.download "0"
+    setprop persist.sys.cell9.upload "0"
+    setprop persist.sys.cell10.init "0"
+    setprop persist.sys.cell10.pid "0"
+    setprop persist.sys.cell10.tar "0"
+    setprop persist.sys.cell10.untar "0"
+    setprop persist.sys.cell10.download "0"
+    setprop persist.sys.cell10.upload "0"
+
+service cell1_adbd_proxy /system/bin/nc -L -p 5556 /vendor/bin/execns2 ${persist.sys.cell1.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service cell2_adbd_proxy /system/bin/nc -L -p 5557 /vendor/bin/execns2 ${persist.sys.cell2.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service cell3_adbd_proxy /system/bin/nc -L -p 5558 /vendor/bin/execns2 ${persist.sys.cell3.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service cell4_adbd_proxy /system/bin/nc -L -p 5559 /vendor/bin/execns2 ${persist.sys.cell4.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service cell5_adbd_proxy /system/bin/nc -L -p 5560 /vendor/bin/execns2 ${persist.sys.cell5.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service cell6_adbd_proxy /system/bin/nc -L -p 5561 /vendor/bin/execns2 ${persist.sys.cell6.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service cell7_adbd_proxy /system/bin/nc -L -p 5562 /vendor/bin/execns2 ${persist.sys.cell7.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service cell8_adbd_proxy /system/bin/nc -L -p 5563 /vendor/bin/execns2 ${persist.sys.cell8.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service cell9_adbd_proxy /system/bin/nc -L -p 5564 /vendor/bin/execns2 ${persist.sys.cell9.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service cell10_adbd_proxy /system/bin/nc -L -p 5565 /vendor/bin/execns2 ${persist.sys.cell10.pid} /system/bin/nc 127.0.0.1 5555
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0

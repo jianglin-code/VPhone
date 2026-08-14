@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">custommade</string>
+    <string name="action_settings">Settings</string>
+    <string name="text1">Longitude</string>
+    <string name="text2">Latitude</string>
+    <string name="text3">Altitude</string>
+    <string name="text4">Front Camera(H-dec)</string>
+    <string name="text5">Back Camera(H-dec)</string>
+    <string name="text6">IMEI Number</string>
+    <string name="text7">IMEISV Number</string>
+    <string name="text8">Phone Number</string>
+    <string name="text9">ANDROIDID</string>
+    <string name="text10">Front Camera(S-dec)</string>
+    <string name="text11">Back Camera(S-dec)</string>
+    <string name="text12">Operator Name</string>
+    <string name="text13">Operator Abbreviation</string>
+    <string name="text14">Operator Code</string>
+    <string name="text15">Loop Playback</string>
+    <string name="text16">No Sound</string>
+    <string name="text17">Enforce Security</string>
+    <string name="text18">New Device</string>
+    <string name="text19">UID ROOT</string>
+    <string name="text20">System partition</string>
+    <string name="text21">Front Camera</string>
+    <string name="text22">Back Camera</string>
+    <string name="text23">SIM card emulation</string>
+    <string name="text24">Share Camera</string>
+    <string name="btns">Submit</string>
+    <string name="btns1">Select</string>
+    <string name="btns2">Random</string>
+    <string name="text1111">Longitude must be within the range of -180 ≤ longitude ≤ 180.</string>
+    <string name="text2222">Latitude must be within the range of -90 ≤ latitude ≤ 90.</string>
+    <string name="text3333">The front camera video source resolution must be 640x480 1920x1080.</string>
+    <string name="text4444">The back camera video source resolution must be 1920x1080.</string>
+    <string name="text5555">After modifying phone-related parameters, a restart is required.</string>
+    <string name="text6666">The host is valid.1 is force mode, and 0 is compatibility mode.</string>
+    <string name="text7777">A restart is required.</string>
+    <string name="text8888">Use +uid to give root privileges to a UID, and -uid to remove them.</string>
+    <string name="text9999">The system partition can only be made writable in non-enforced security mode.</string>
+    <string name="title">VPhone Custommade</string>
+
+</resources>

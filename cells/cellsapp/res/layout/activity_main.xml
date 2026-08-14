@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@drawable/br" >
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:layout_width="wrap_content" 
+        android:layout_height="40dp" 
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:singleLine="true" 
+        android:text="@string/title" 
+        android:textSize="16sp" /> 
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell1" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell1" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell1" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell1" />
+        <Button 
+        android:id="@+id/btn_cell11" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell11" />
+        <Button 
+        android:id="@+id/btn_cell111" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell111" />
+        <Button 
+        android:id="@+id/btn_cell1111" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell1111" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell2" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell2" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell2" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell2" />
+        <Button 
+        android:id="@+id/btn_cell22" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell22" />
+        <Button 
+        android:id="@+id/btn_cell222" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell222" />
+        <Button 
+        android:id="@+id/btn_cell2222"
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell2222" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell3" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell3" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell3" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell3" />
+        <Button 
+        android:id="@+id/btn_cell33" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell33" />
+        <Button 
+        android:id="@+id/btn_cell333" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell333" />
+        <Button 
+        android:id="@+id/btn_cell3333"
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell3333" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell4" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell4" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell4" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell4" />
+        <Button 
+        android:id="@+id/btn_cell44" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell44" />
+        <Button 
+        android:id="@+id/btn_cell444" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell444" />
+        <Button 
+        android:id="@+id/btn_cell4444"
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell4444" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell5" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell5" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell5" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell5" />
+        <Button 
+        android:id="@+id/btn_cell55" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell55" />
+        <Button 
+        android:id="@+id/btn_cell555" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell555" />
+        <Button 
+        android:id="@+id/btn_cell5555"
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell5555" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell6" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell6" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell6" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell6" />
+        <Button 
+        android:id="@+id/btn_cell66" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell66" />
+        <Button 
+        android:id="@+id/btn_cell666" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell666" />
+        <Button 
+        android:id="@+id/btn_cell6666"
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell6666" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell7" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell7" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell7" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell7" />
+        <Button 
+        android:id="@+id/btn_cell77" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell77" />
+        <Button 
+        android:id="@+id/btn_cell777" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell777" />
+        <Button 
+        android:id="@+id/btn_cell7777"
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell7777" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell8" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell8" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell8" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell8" />
+        <Button 
+        android:id="@+id/btn_cell88" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell88" />
+        <Button 
+        android:id="@+id/btn_cell888" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell888" />
+        <Button 
+        android:id="@+id/btn_cell8888"
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell8888" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell9" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell9" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell9" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell9" />
+        <Button 
+        android:id="@+id/btn_cell99" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell99" />
+        <Button 
+        android:id="@+id/btn_cell999" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell999" />
+        <Button 
+        android:id="@+id/btn_cell9999"
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell9999" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text_cell10" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="5" 
+        android:layout_marginLeft="4dp"
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/cell10" 
+        android:textSize="10sp" /> 
+        <Button 
+        android:id="@+id/btn_cell10" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text=""
+        android:onClick="btncell10" />
+        <Button 
+        android:id="@+id/btn_cell1010" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns1"
+        android:onClick="btncell1010" />
+        <Button 
+        android:id="@+id/btn_cell101010" 
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns2"
+        android:onClick="btncell101010" />
+        <Button 
+        android:id="@+id/btn_cell10101010"
+        android:layout_width="0dp" 
+        android:layout_height="35dp" 
+        android:layout_weight="1.3" 
+        android:textSize="8sp"
+        android:text="@string/btns3"
+        android:onClick="btncell10101010" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

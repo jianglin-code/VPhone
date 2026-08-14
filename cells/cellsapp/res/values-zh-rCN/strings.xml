@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">管理中心</string>
+    <string name="action_settings">Settings</string>
+    <string name="cell1">虚拟手机 1</string>
+    <string name="cell2">虚拟手机 2</string>
+    <string name="cell3">虚拟手机 3</string>
+    <string name="cell4">虚拟手机 4</string>
+    <string name="cell5">虚拟手机 5</string>
+    <string name="cell6">虚拟手机 6</string>
+    <string name="cell7">虚拟手机 7</string>
+    <string name="cell8">虚拟手机 8</string>
+    <string name="cell9">虚拟手机 9</string>
+    <string name="cell10">虚拟手机 10</string>
+    <string name="cell">虚拟手机</string>
+    <string name="title">虚拟手机 管理中心</string>
+    <string name="btns1">重置</string>
+    <string name="btns2">备份</string>
+    <string name="btns3">恢复</string>
+    <string name="alert">警告</string>
+    <string name="alertmsg">确定后，虚拟手机将重置</string>
+    <string name="alertconfirm">确定</string>
+    <string name="alertcancel">取消</string>
+
+</resources>

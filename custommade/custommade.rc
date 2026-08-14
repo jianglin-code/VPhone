@@ -1,0 +1,58 @@
+on load_persist_props_action
+    exec u:r:init:s0 root root -- /system/bin/sh /vendor/bin/init.custommade.init.sh
+    # setprop persist.sys.host.selinux.enforce 1
+    setprop persist.sys.custommade.prop ""
+    # setprop persist.sys.custommade.uidroot "+0"
+    # setprop persist.sys.custommade.partition.rw 0
+
+service custommade /vendor/bin/custommade
+    class main
+    user root
+    group root
+    oneshot
+    seclabel  u:r:init:s0
+
+service cells_overlayfs /system/bin/init.cells.overlayfs.sh
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+######################
+# for deviceinfo androidid
+######################
+on property:persist.ro.custommade.deviceinfo.androidid=* && property:sys.boot_completed=1
+    exec u:r:init:s0 root root -- /system/bin/settings put secure android_id ${persist.ro.custommade.deviceinfo.androidid}
+
+######################
+# for new deviceinfo # must cp && rm !!!
+######################
+on property:persist.sys.custommade.prop=* && property:sys.boot_completed=1
+    exec u:r:init:s0 root root -- /system/bin/cp ${persist.sys.custommade.prop} /data/build.simulation.prop
+    exec u:r:init:s0 root root -- /system/bin/rm ${persist.sys.custommade.prop}
+
+on property:persist.sys.custommade.prop=0 && property:sys.boot_completed=1
+    exec u:r:init:s0 root root -- /system/bin/rm /data/build.simulation.prop
+
+######################
+# for uid root
+######################
+on property:persist.sys.custommade.uidroot=* && property:sys.boot_completed=1
+    write /sys/fs/selinux/uids ${persist.sys.custommade.uidroot}
+
+######################
+# for System partition: RW mode
+######################
+on early-boot && property:persist.sys.custommade.partition.rw=1
+    exec u:r:init:s0 root root -- /system/bin/init.cells.overlayfs.sh
+
+on property:persist.sys.custommade.partition.rw=1 && property:sys.boot_completed=1
+    exec u:r:init:s0 root root -- /system/bin/cellssync persist.sys.host.selinux.enforce
+    start cells_overlayfs
+
+######################
+# for selinux enforce
+######################
+on property:persist.sys.host.selinux.enforce=* && property:sys.boot_completed=1
+    exec u:r:init:s0 root root -- /system/bin/setenforce ${persist.sys.host.selinux.enforce}

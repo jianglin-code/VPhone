@@ -1,0 +1,66 @@
+on early-boot
+    exec u:r:init:s0 root root -- /vendor/bin/virtualcamerainit
+    exec u:r:init:s0 root root -- /vendor/bin/v4l2loopback-ctl set-caps ${persist.sys.v4l2.camera.back} NV12:${persist.sys.v4l2.camera.back.w}x${persist.sys.v4l2.camera.back.h}@30/1
+    exec u:r:init:s0 root root -- /vendor/bin/v4l2loopback-ctl set-caps ${persist.sys.v4l2.camera.front} NV12:${persist.sys.v4l2.camera.front.w}x${persist.sys.v4l2.camera.front.h}@30/1
+
+service cellscamera /system/bin/cellscamera
+    class main
+    user root
+    group root
+    seclabel  u:r:init:s0
+
+service rtspservice-back /system/bin/rtspstream ${persist.sys.v4l2.camera.back} ${persist.sys.camera.back.url} ${persist.sys.v4l2.camera.back.w} ${persist.sys.v4l2.camera.back.h} 30
+    class main
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service ffmpegservice-back /system/bin/ffmpeg -i  ${persist.sys.camera.back.file} -vf format=nv12 -r 30 -s ${persist.sys.v4l2.camera.back.w}x${persist.sys.v4l2.camera.back.h} -f v4l2 ${persist.sys.v4l2.camera.back}
+    class main
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service rtspservice-front /system/bin/rtspstream ${persist.sys.v4l2.camera.front} ${persist.sys.camera.front.url} ${persist.sys.v4l2.camera.front.w} ${persist.sys.v4l2.camera.front.h} 30
+    class main
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+service ffmpegservice-front /system/bin/ffmpeg -i  ${persist.sys.camera.front.file} -vf format=nv12 -r 30 -s ${persist.sys.v4l2.camera.front.w}x${persist.sys.v4l2.camera.front.h} -f v4l2 ${persist.sys.v4l2.camera.front}
+    class main
+    user root
+    group root
+    oneshot
+    disabled
+    seclabel  u:r:init:s0
+
+on property:persist.sys.camera.back.url=* && property:sys.boot_completed=1
+    # exec u:r:virtualcamera:s0 root root -- /vendor/bin/v4l2loopback-ctl set-caps ${persist.sys.v4l2.camera.back} NV12:${persist.sys.v4l2.camera.back.w}x${persist.sys.v4l2.camera.back.h}@30/1
+    stop ffmpegservice-back
+    stop rtspservice-back
+    start rtspservice-back
+
+on property:persist.sys.camera.back.file=* && property:sys.boot_completed=1
+    # exec u:r:virtualcamera:s0 root root -- /vendor/bin/v4l2loopback-ctl set-caps ${persist.sys.v4l2.camera.back} NV12:${persist.sys.v4l2.camera.back.w}x${persist.sys.v4l2.camera.back.h}@30/1
+    stop ffmpegservice-back
+    stop rtspservice-back
+    start ffmpegservice-back
+
+on property:persist.sys.camera.front.url=* && property:sys.boot_completed=1
+    # exec u:r:virtualcamera:s0 root root -- /vendor/bin/v4l2loopback-ctl set-caps ${persist.sys.v4l2.camera.front} NV12:${persist.sys.v4l2.camera.front.w}x${persist.sys.v4l2.camera.front.h}@30/1
+    stop ffmpegservice-front
+    stop rtspservice-front
+    start rtspservice-front
+
+on property:persist.sys.camera.front.file=* && property:sys.boot_completed=1
+    # exec u:r:virtualcamera:s0 root root -- /vendor/bin/v4l2loopback-ctl set-caps ${persist.sys.v4l2.camera.front} NV12:${persist.sys.v4l2.camera.front.w}x${persist.sys.v4l2.camera.front.h}@30/1
+    stop ffmpegservice-front
+    stop rtspservice-front
+    start ffmpegservice-front

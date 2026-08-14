@@ -1,0 +1,49 @@
+on early-init
+    # exec u:r:init:s0 root root -- /system/bin/sh /system/bin/init.cells.overlayfs.sh
+
+on post-fs-data
+    setprop ro.boot.vm 0
+
+on load_persist_props_action
+    setprop persist.sys.exit 0
+    setprop persist.sys.active ""
+    setprop persist.sys.ui.exit 0
+    setprop persist.sys.iw.wlan ""
+    setprop persist.logd.logpersistd logcatd
+    setprop persist.sys.sdcardfs force_on
+
+service celld /system/bin/celld -c /data/cells -F -r
+    class main
+    user root
+    group root
+    seclabel  u:r:init:s0
+
+service cellsservice /system/bin/cellsservice
+    class main
+    user root
+    group root
+    seclabel  u:r:init:s0
+
+on property:persist.security.root=0
+    write /sys/fs/selinux/uids "+0"
+    write /sys/fs/selinux/enforce 1
+    write /sys/fs/selinux/uids "-0"
+
+on property:persist.security.root=1
+    write /sys/fs/selinux/uids "+0"
+    write /sys/fs/selinux/enforce 0
+    write /sys/fs/selinux/uids "-0"
+
+on property:persist.security.reboot=0
+    write /sys/fs/selinux/uids "+0"
+    write /sys/fs/selinux/enforce 0
+    exec - root root -- /system/bin/stop
+    exec - root root -- /system/bin/start
+    write /sys/fs/selinux/uids "-0"
+
+on property:persist.security.reboot=1
+    write /sys/fs/selinux/uids "+0"
+    write /sys/fs/selinux/enforce 0
+    exec - root root -- /system/bin/stop
+    exec - root root -- /system/bin/start
+    write /sys/fs/selinux/uids "-0"

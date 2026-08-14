@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_layout"
+    android:background="@drawable/br"
+    android:orientation="vertical" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:layout_width="wrap_content" 
+        android:layout_height="40dp" 
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:singleLine="true" 
+        android:text="@string/title" 
+        android:textSize="16sp" /> 
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text1" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text1"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit1"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn1" 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk1" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="0dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#F5D8B3"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+        <TextView 
+        android:id="@+id/text111" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="0dp"
+        android:layout_height="20dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text1111"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text2" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text2"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit2"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true"
+        android:textSize="10sp"
+        android:hint="" />
+        <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk2" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="0dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#F5D8B3"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+        <TextView 
+        android:id="@+id/text222" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="0dp" 
+        android:layout_height="20dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text2222"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text3" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text3"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit3"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn3" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk3" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text4" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text4"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit4"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn41" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns1"
+        android:onClick="btnClk41" />
+        <Button 
+        android:id="@+id/btn4" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk4" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text10" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text10"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit10"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn101" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns1"
+        android:onClick="btnClk101" />
+        <Button 
+        android:id="@+id/btn10" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk10" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text21" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text21"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit21"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button
+        android:id="@+id/btn21" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk21" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="0dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#F5D8B3"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+        <TextView 
+        android:id="@+id/text333" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="0dp" 
+        android:layout_height="20dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text3333"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text5" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical"  
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text5"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit5"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn51" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns1"
+        android:onClick="btnClk51" />
+        <Button 
+        android:id="@+id/btn5" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk5" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text11" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text11"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit11"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn111" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns1"
+        android:onClick="btnClk111" />
+        <Button 
+        android:id="@+id/btn11" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk11" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text22" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text22"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit22"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button
+        android:id="@+id/btn22" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk22" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="0dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#F5D8B3"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+        <TextView 
+        android:id="@+id/text444" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="0dp" 
+        android:layout_height="20dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text4444"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:id="@+id/layouthost1"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="left|center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView 
+        android:id="@+id/text24" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text24"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit24"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button
+        android:id="@+id/btn24" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk24" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="left|center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <Switch
+            android:id="@+id/edit15"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" 
+            android:layout_gravity="left|center_vertical"
+            android:ellipsize="end" 
+            android:gravity="left|center_vertical" 
+            android:singleLine="true" 
+            android:text="@string/text15"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+        <Switch
+            android:id="@+id/edit16"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" 
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end" 
+            android:gravity="left|center_vertical" 
+            android:singleLine="true" 
+            android:text="@string/text16"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text6" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text6"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit6"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn61" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns2"
+        android:onClick="btnClk61" />
+        <Button 
+        android:id="@+id/btn6" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk6" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text7" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text7"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit7"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn7" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk7" />
+    </LinearLayout> 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text8" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text8"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit8"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn8" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk8" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text12" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text12"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit12"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn12" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk12" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text13" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text13"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit13"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn13" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk13" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text14" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text14"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit14"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn14" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk14" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="0dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#F5D8B3"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+        <TextView 
+        android:id="@+id/text555" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="0dp" 
+        android:layout_height="20dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text5555"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="left|center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        <Switch
+            android:id="@+id/edit23"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" 
+            android:layout_gravity="left|center_vertical"
+            android:ellipsize="end" 
+            android:gravity="left|center_vertical" 
+            android:singleLine="true" 
+            android:text="@string/text23"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text9" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text9"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit9"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn91" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns2"
+        android:onClick="btnClk91" />
+        <Button 
+        android:id="@+id/btn9" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk9" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text18" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text18"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit18"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn18" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk18" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="0dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#F5D8B3"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+        <TextView 
+        android:id="@+id/text777" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="0dp" 
+        android:layout_height="20dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text7777"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal" > 
+        <TextView 
+        android:id="@+id/text19" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text19"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+        <EditText
+        android:id="@+id/edit19"
+        android:layout_width="0dp" 
+        android:layout_height="30dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:textSize="10sp"
+        android:hint="" />
+        <Button 
+        android:id="@+id/btn19" 
+        android:layout_width="wrap_content" 
+        android:layout_height="30dp" 
+        android:textSize="10sp"
+        android:text="@string/btns"
+        android:onClick="btnClk19" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="0dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#F5D8B3"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+        <TextView 
+        android:id="@+id/text888" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="0dp" 
+        android:layout_height="20dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text8888"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#F5D8B3"
+        android:gravity="left|center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        <Switch
+            android:id="@+id/edit17"
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" 
+            android:layout_gravity="left|center_vertical"
+            android:ellipsize="end" 
+            android:gravity="left|center_vertical" 
+            android:singleLine="true" 
+            android:text="@string/text17"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+        <Switch
+            android:id="@+id/edit20"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" 
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end" 
+            android:gravity="left|center_vertical" 
+            android:singleLine="true" 
+            android:text="@string/text20"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#F5D8B3"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+        <TextView 
+        android:id="@+id/text999" 
+        android:layout_marginLeft="4dp"
+        android:layout_width="0dp" 
+        android:layout_height="20dp" 
+        android:layout_gravity="left|center_vertical" 
+        android:layout_weight="1" 
+        android:ellipsize="end" 
+        android:gravity="left|center_vertical" 
+        android:singleLine="true" 
+        android:text="@string/text9999"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="10sp" /> 
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
