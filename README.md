@@ -10,3 +10,6 @@ In this paper, we present novel techniques for achieving high-fidelity Android v
 Video: https://github.com/jianglin-code/VPhone/blob/main/VPhone-DEMO-Video/Multi-OpenSystems.mp4
 
 Paper: https://github.com/jianglin-code/VPhone/blob/main/VPhone.pdf
+
+# Note
+Because of computer security, the paper can't be published. 
