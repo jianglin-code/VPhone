@@ -13,3 +13,5 @@ Paper: https://github.com/jianglin-code/VPhone/blob/main/VPhone.pdf
 
 # Note
 Because of computer security, the paper can't be published. 
+
+The code base is also incomplete!
