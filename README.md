@@ -6,3 +6,7 @@ In this paper, we present novel techniques for achieving high-fidelity Android v
 ## Overview of AutoVP's Architecture
 
 <img src="https://github.com/jianglin-code/VPhone/blob/main/VPhone.png" width="800">
+
+Video: https://github.com/jianglin-code/VPhone/blob/main/VPhone.mp4
+
+Paper: https://github.com/jianglin-code/VPhone/blob/main/VPhone.pdf
