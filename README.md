@@ -3,7 +3,7 @@ In a world increasingly reliant on smartphones, the rising demand for computatio
 
 In this paper, we present novel techniques for achieving high-fidelity Android virtualization on IPTV edge computing devices. Departing from traditional server-based deployment, our approach employs Android container technology to construct realistic virtual phone environments directly on IPTV devices. By customizing device environments and emulating essential hardware components, our developed platform operates covertly without disrupting IPTV functionalities (e.g., Android TV OS) and remains inconspicuous to device owners. Moreover, residential IP addresses inherent to IPTV devices complicate the detection of potential misuse. We experimentally demonstrate the feasibility and effectiveness of our approach, highlighting its significant implications for security, including its potential exploitation for malicious activities. Our findings advocate for strengthened regulatory oversight and advancements in environment detection technologies to mitigate such risks.
 
-## Overview of AutoVP's Architecture
+## Overview of VPhone's Architecture
 
 <img src="https://github.com/jianglin-code/VPhone/blob/main/VPhone.png" width="800">
 
