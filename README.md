@@ -11,6 +11,8 @@ Video: https://github.com/jianglin-code/VPhone/blob/main/VPhone-DEMO-Video/Multi
 
 Paper: https://github.com/jianglin-code/VPhone/blob/main/VPhone.pdf
 
+Security event: https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet
+
 # Note
 Because of computer security, the paper can't be published. 
 
