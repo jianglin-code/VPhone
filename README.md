@@ -11,9 +11,9 @@ Video: https://github.com/jianglin-code/VPhone/blob/main/VPhone-DEMO-Video/Multi
 
 Paper: https://github.com/jianglin-code/VPhone/blob/main/VPhone.pdf
 
-Security event: https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet
-
 # Written Three Years Before the Security event
+
+Security event: https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet
 
 IPTV devices are a natural breeding ground for the cyber gray market.
 
