@@ -13,13 +13,13 @@ Paper: https://github.com/jianglin-code/VPhone/blob/main/VPhone.pdf
 
 # Written Three Years Before the Security event
 
-Security event: https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet
-
 IPTV devices are a natural breeding ground for the cyber gray market.
 
 Hardware characteristics: Built-in multimedia modules such as a GPU and VPU.
 
 Operating profile: Residential IP addresses, Running around the clock, Unattended.
+
+Security event: https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet
 
 # Note
 Because of computer security, the paper can't be published. 
